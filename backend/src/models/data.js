@@ -1,14 +1,14 @@
 import { DataTypes } from 'sequelize'
 
-export default function User (sequelize) {
-  return sequelize.define('User', {
+export default function Data (sequelize) {
+  return sequelize.define('Data', {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true
     },
-    username: {
-      type: DataTypes.STRING,
+    value: {
+      type: DataTypes.DOUBLE,
       allowNull: false
     }
   })

@@ -1,13 +1,13 @@
 import { DataTypes } from 'sequelize'
 
-export default function User (sequelize) {
-  return sequelize.define('User', {
+export default function Group (sequelize) {
+  return sequelize.define('Group', {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true
     },
-    username: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false
     }
